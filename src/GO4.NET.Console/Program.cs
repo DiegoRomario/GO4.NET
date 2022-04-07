@@ -1,8 +1,13 @@
-﻿using GO4.NET.Console._1_Creational._1_AbstractFactory.Client;
-using GO4.NET.Console._1_Creational._1_AbstractFactory.ConcreteImplementations;
+﻿using GO4.NET.Console._1_Creational._2_Builder.Client;
+using GO4.NET.Console._1_Creational._2_Builder.ConcreteImplementations;
 
-var client = new ClientDB(new PlayersMemoryDB());
-client.Write();
-client.Read();
+#region 1-AbstractFactory
+//var clientDb = new ClientDB(new PlayersMemoryDB());
+//clientDb.Write();
+//clientDb.Read();
+//Console.ReadLine();
+#endregion 1-AbstractFactory
 
+ClientRequest clientRequest = new ClientRequest(new HTTPRequestBuilder(), "http://my-api.com/api/v1/");
+clientRequest.RequestNoAuth("getData");
 Console.ReadLine();
