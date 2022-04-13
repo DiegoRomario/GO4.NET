@@ -1,6 +1,7 @@
 ﻿using GO4.NET.Console._1_Creational._2_Builder.Client;
 using GO4.NET.Console._1_Creational._2_Builder.ConcreteImplementations;
 using GO4.NET.Console._1_Creational._3_FactoryMethod.Client;
+using GO4.NET.Console._1_Creational._4_Prototype.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -13,8 +14,12 @@ using GO4.NET.Console._1_Creational._3_FactoryMethod.Client;
 //clientRequest.RequestNoAuth("getData");
 #endregion
 
-ClientDBProvider clientDBProvider = new();
-clientDBProvider.Connect();
-clientDBProvider.ExecQuery("SELECT * FROM CLIENT");
+#region 2-FactoryMethod
+//ClientDBProvider clientDBProvider = new();
+//clientDBProvider.Connect();
+//clientDBProvider.ExecQuery("SELECT * FROM CLIENT");
+#endregion
+
+FormClient.GetForm();
 
 Console.ReadLine();
