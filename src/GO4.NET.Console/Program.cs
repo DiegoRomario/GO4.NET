@@ -3,6 +3,8 @@ using GO4.NET.Console._1_Creational._2_Builder.ConcreteImplementations;
 using GO4.NET.Console._1_Creational._3_FactoryMethod.Client;
 using GO4.NET.Console._1_Creational._4_Prototype.Client;
 using GO4.NET.Console._1_Creational._5_Singleton.Client;
+using GO4.NET.Console._2_Structural._1_Adapter.Client;
+using GO4.NET.Console._2_Structural._1_Adapter.ConcreteImplementations;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -25,6 +27,20 @@ using GO4.NET.Console._1_Creational._5_Singleton.Client;
 //FormClient.GetForm();
 #endregion
 #region 5-Singleton
-RequestClient.Exec();
+//RequestClient.Exec();
 #endregion
+
+#region 1-Adapter
+HomeApplianceClient clientBR = new(new TwoPinSocket(), "Oven");
+clientBR.TurnOn();
+clientBR.TurnOff();
+
+Console.WriteLine(new String('-', 40));
+
+HomeApplianceClient europeanClient = new(new Adapter(new ThreePinSocket()), "Microwave");
+europeanClient.TurnOn();
+europeanClient.TurnOff();
+#endregion
+
+
 Console.ReadLine();
