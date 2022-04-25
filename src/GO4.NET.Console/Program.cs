@@ -6,6 +6,7 @@ using GO4.NET.Console._1_Creational._5_Singleton.Client;
 using GO4.NET.Console._2_Structural._1_Adapter.Client;
 using GO4.NET.Console._2_Structural._1_Adapter.ConcreteImplementations;
 using GO4.NET.Console._2_Structural._2_Bridge.Client;
+using GO4.NET.Console._2_Structural._3_Composite.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -44,9 +45,12 @@ using GO4.NET.Console._2_Structural._2_Bridge.Client;
 #endregion
 
 #region 2-Bridge
-SenderMessagesClient senderClient = new();
-senderClient.Send();
+//SenderMessagesClient senderClient = new();
+//senderClient.Send();
 #endregion
 
+#region 3-Composite
+ScreenClient.BuildScreen();
+#endregion
 
 Console.ReadLine();
