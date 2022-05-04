@@ -9,6 +9,7 @@ using GO4.NET.Console._2_Structural._2_Bridge.Client;
 using GO4.NET.Console._2_Structural._3_Composite.Client;
 using GO4.NET.Console._2_Structural._4_Decorator.Client;
 using GO4.NET.Console._2_Structural._5_Facade.Client;
+using GO4.NET.Console._2_Structural._6_Flyweight.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -60,7 +61,11 @@ using GO4.NET.Console._2_Structural._5_Facade.Client;
 #endregion
 
 #region 5-Facade
-PaymentClient.PayOrders();
+//PaymentClient.PayOrders();
+#endregion
+
+#region 6-Flyweight
+FlyweightClient.Show();
 #endregion
 
 
