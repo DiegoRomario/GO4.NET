@@ -10,6 +10,7 @@ using GO4.NET.Console._2_Structural._3_Composite.Client;
 using GO4.NET.Console._2_Structural._4_Decorator.Client;
 using GO4.NET.Console._2_Structural._5_Facade.Client;
 using GO4.NET.Console._2_Structural._6_Flyweight.Client;
+using GO4.NET.Console._2_Structural._7_Proxy.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -65,7 +66,11 @@ using GO4.NET.Console._2_Structural._6_Flyweight.Client;
 #endregion
 
 #region 6-Flyweight
-FlyweightClient.Show();
+//FlyweightClient.Show();
+#endregion
+
+#region 7-Proxy
+new DocumentClient().Print();
 #endregion
 
 
