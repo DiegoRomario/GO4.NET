@@ -12,6 +12,7 @@ using GO4.NET.Console._2_Structural._5_Facade.Client;
 using GO4.NET.Console._2_Structural._6_Flyweight.Client;
 using GO4.NET.Console._2_Structural._7_Proxy.Client;
 using GO4.NET.Console._3_Behavioral._1_ChainOfResponsibility.Client;
+using GO4.NET.Console._3_Behavioral._2_Command.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -75,9 +76,13 @@ using GO4.NET.Console._3_Behavioral._1_ChainOfResponsibility.Client;
 //new DocumentClient().Print();
 #endregion
 
-#region 1-ChainOfResponsibility
-AuthorizationClient.AuthorizePaidTimeOff();
-#endregion
+//#region 1-ChainOfResponsibility
+//AuthorizationClient.AuthorizePaidTimeOff();
+//#endregion
+
+#region 2-Command
+CommandClient.Execute();
+#endregion 
 
 
 Console.ReadLine();
