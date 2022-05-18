@@ -11,6 +11,7 @@ using GO4.NET.Console._2_Structural._4_Decorator.Client;
 using GO4.NET.Console._2_Structural._5_Facade.Client;
 using GO4.NET.Console._2_Structural._6_Flyweight.Client;
 using GO4.NET.Console._2_Structural._7_Proxy.Client;
+using GO4.NET.Console._3_Behavioral._1_ChainOfResponsibility.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -32,6 +33,7 @@ using GO4.NET.Console._2_Structural._7_Proxy.Client;
 #region 4-Prototype
 //FormClient.GetForm();
 #endregion
+
 #region 5-Singleton
 //RequestClient.Exec();
 #endregion
@@ -70,7 +72,11 @@ using GO4.NET.Console._2_Structural._7_Proxy.Client;
 #endregion
 
 #region 7-Proxy
-new DocumentClient().Print();
+//new DocumentClient().Print();
+#endregion
+
+#region 1-ChainOfResponsibility
+AuthorizationClient.AuthorizePaidTimeOff();
 #endregion
 
 

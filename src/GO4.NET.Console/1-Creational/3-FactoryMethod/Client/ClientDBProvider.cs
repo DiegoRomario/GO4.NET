@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-
-namespace GO4.NET.Console._1_Creational._3_FactoryMethod.Client
+﻿namespace GO4.NET.Console._1_Creational._3_FactoryMethod.Client
 {
     internal class ClientDBProvider
     {
