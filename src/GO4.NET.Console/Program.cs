@@ -17,6 +17,7 @@ using GO4.NET.Console._3_Behavioral._3_Interpreter.Client;
 using GO4.NET.Console._3_Behavioral._4_Iterator.Client;
 using GO4.NET.Console._3_Behavioral._5_Mediator.Client;
 using GO4.NET.Console._3_Behavioral._6_Memento.Client;
+using GO4.NET.Console._3_Behavioral._7_Observer.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -100,8 +101,12 @@ using GO4.NET.Console._3_Behavioral._6_Memento.Client;
 //MediatorClient.Run();
 #endregion
 
-#region 6-Memento
-CalculatorClient.Calculate();
+//#region 6-Memento
+//CalculatorClient.Calculate();
+//#endregion
+
+#region 7-Observer
+ObserverClient.Observe();
 #endregion
 
 Console.ReadLine();
