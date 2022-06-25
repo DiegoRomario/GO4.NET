@@ -19,6 +19,7 @@ using GO4.NET.Console._3_Behavioral._5_Mediator.Client;
 using GO4.NET.Console._3_Behavioral._6_Memento.Client;
 using GO4.NET.Console._3_Behavioral._7_Observer.Client;
 using GO4.NET.Console._3_Behavioral._8_State.Client;
+using GO4.NET.Console._3_Behavioral._9_Strategy.Client;
 
 #region 1-AbstractFactory
 //var clientDb = new ClientDB(new PlayersMemoryDB());
@@ -110,8 +111,13 @@ using GO4.NET.Console._3_Behavioral._8_State.Client;
 //ObserverClient.Observe();
 //#endregion
 
+//#region 8-State
+//StateClient.Pay();
+//#endregion
 
-#region 8-State
-StateClient.Pay();
-#endregion
+
+//#region 9-Strategy
+StrategyClient.Run();
+//#endregion
+
 Console.ReadLine();
