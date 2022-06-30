@@ -12,6 +12,7 @@ using GO4.NET.Console._2_Structural._5_Facade.Client;
 using GO4.NET.Console._2_Structural._6_Flyweight.Client;
 using GO4.NET.Console._2_Structural._7_Proxy.Client;
 using GO4.NET.Console._3_Behavioral._1_ChainOfResponsibility.Client;
+using GO4.NET.Console._3_Behavioral._10_TemplateMethod.Client;
 using GO4.NET.Console._3_Behavioral._2_Command.Client;
 using GO4.NET.Console._3_Behavioral._3_Interpreter.Client;
 using GO4.NET.Console._3_Behavioral._4_Iterator.Client;
@@ -118,6 +119,10 @@ using GO4.NET.Console._3_Behavioral._9_Strategy.Client;
 
 //#region 9-Strategy
 StrategyClient.Run();
+//#endregion
+
+//#region 10-TemplateMethod
+TemplateClient.Run();
 //#endregion
 
 Console.ReadLine();
